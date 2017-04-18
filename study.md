@@ -41,7 +41,7 @@ In your own words, define what the responsibilities of the model layer are in
 Rails.
 
 ```md
-<!-- your answer here -->
+The model layer communicates with the database, stores, validates, and retrieves data.
 ```
 
 ## Define Controller Responsibilities
@@ -51,6 +51,7 @@ in Rails.
 
 ```md
 <!-- your answer here -->
+The controller layer runs between the model layer and web server and is responsible for giving orders to them.
 ```
 
 ## Define Router Responsibilities
@@ -59,6 +60,7 @@ In your own words, define what the router does in Rails.
 
 ```md
 <!-- your answer here -->
+The router recognizes URLs and matches them to a controller action.
 ```
 
 ## The Request-Response Cycle in Rails
@@ -68,4 +70,5 @@ the parts of Rails interact to produce and send a response.
 
 ```md
 <!-- your answer here -->
+When a user opens a browser and enters a URL, the request hits the Rails router which maps the URL to a controller and action to handle the request. The controller then asks the model to retrieve information from the database. Once the model returns the information back to the controller, the controller passes the data to the view which renders the page.
 ```
